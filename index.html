@@ -10,39 +10,107 @@
 </head>
 
 <body>
-    <header>
-        <h1>Devlog</h1>
-        <p>Aprendiendo desarrollo web</p>
+    <header class="navbar" >
+        <a href="#" class="logo">DevLog<span>.</span></a>
+        
+        <nav>
+            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#aprendizaje">Aprendizajes</a>
+            <a href="#proyectos">Proyectos</a>
+        </nav>
+
+        <button id = "boton-tema" class="boton-tema">
+            cambiar tema
+        </button>
+
     </header>
+
+
+
     <main>
-        <section>
-            <h2>  Sobre el proyecto </h2>
-            <p>Estoy aprendiendo HTML, CSS y JavaScript porque el profe 
-                nomas nos hace copiar y pegar codigo</p>
-        </section>
-
-        <section>
-            <h2>Que estoy aprendiendo?</h2>
-            <ul>
-                <li>HTML: es la estructura de la web, lo que quiero mostrar</li>
-                <li>CSS: es todo lo visual, como se ve lo que quiero mostrar</li>
-                <li>JS: controla que ocurre cuando interactuamos con lo que quiero mostrar</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Prueba de boton</h2>
-            <p>Voy a probar configurar un boton</p>
-            <p>El boton tiene id interno para identificarlo</p>
-            <p id="mensaje">Todavía no has pulsado el botón.</p>
-            <button id = "boton-mensaje">Haz clic </button>
+        <section class = "hero" id="sobre-mi">
+            <p class = "etiqueta">MI ESPACIO DE APRENDIZAJE</p>
+            <hi>Construyendo cosas.<br>
+                <span>Aprendiendo siempre.</span>
+            </hi>
+            <p class = "descripcion">
+                Soy un estudiante de programacion ola
+                estoy haciendo esto aun no entiendo muy bien
+            </p>
+            
+            <a href ="#proyectos" class ="boton-principal">
+                Explora mis proyectos ->
+            </a>
 
         </section>
+
+        <section id="aprendizaje">
+            <div class = "titulo-seccion">
+                <p class = "etiqueta">MI PROGRESO</p>   
+                <h2>Lo que estoy aprendiendo</h2>
+            </div>
+
+
+            <div class = "rejilla">
+                <article class = "tarjeta">
+                    <span class ="numero">01</span>
+                    <h3>HTML</h3>
+                    <p>Construir estructuras claras en desarrollo web.</p>
+                </article>
+
+                <article class = "tarjeta">
+                    <span class ="numero">02</span>
+                    <h3>CSS</h3>
+                    <p>Construir la visualisación y estilo de la pagina web.</p>
+                </article>
+
+                <article class = "tarjeta">
+                    <span class ="numero">03</span>
+                    <h3>JavaScript</h3>
+                    <p>Construir como interactua la pagina web con las interacciones
+                        del cliente.</p>
+                </article>
+            </div>
+            </section>
+
+            <section id = "proyectos">
+                <div>
+                    <article class ="proyecto">
+                    <p class = "etiqueta">PROYECTO 1</p>
+                    <h3>DevLog</h3>
+                    <p>
+                        Mi primera web personal, la cree para
+                        practicar HTML, CSS y JS.
+                        Añadire cosas conforme aprenda.
+                    </p>
+                    </article>
+                
+                    <article class ="proyecto">
+                    <p class = "etiqueta">PROYECTO 2</p>
+                    <h3>Pagina Comunidad</h3>
+                    <p>
+                        Proyecto de Desarrolo Web en la ESPOL,
+                        lo estoy haciendo con mi compañero zycro
+                        enlace:
+                        <a href = "https://github.com/Zycro137/Proyecto-2-DAWM.git">Enlace al Proyecto</a>
+                    </p>
+
+                    </article>
+                    <div class ="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+                
+
+            </section>
 
     </main>
 
     <footer>
-        <p> Este es mi primer proyecto web (para estudiar)·2026</p>
+        <p>Hecho mientras aprendo · DevLog © 2026</p>
     </footer>
 
 
