@@ -18,10 +18,32 @@ formulario.addEventListener("submit", function (evento) {
         return;
     }
 
-    const nuevaTarea = document.createElement("li");
-    nuevaTarea.textContent = textoTarea;
+    
+const nuevaTarea = document.createElement("li");
 
-    listaTareas.appendChild(nuevaTarea);
+const texto = document.createElement("span");
+texto.textContent = textoTarea;
+
+const botonCompletar = document.createElement("button");
+botonCompletar.textContent = "Completar";
+
+botonCompletar.addEventListener("click", function () {
+    texto.classList.toggle("completada");
+});
+
+const botonEliminar = document.createElement("button");
+botonEliminar.textContent = "Eliminar";
+
+botonEliminar.addEventListener("click", function () {
+    nuevaTarea.remove();
+});
+
+nuevaTarea.appendChild(texto);
+nuevaTarea.appendChild(botonCompletar);
+nuevaTarea.appendChild(botonEliminar);
+
+listaTareas.appendChild(nuevaTarea);
+
 
     entradaTarea.value = "";
 });

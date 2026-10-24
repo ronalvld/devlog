@@ -249,3 +249,62 @@ body.tema-claro {
     --acento: #6d28d9;
     --borde: #d1d5db;
 }
+
+/* Lista de tareas */
+#formulario-tarea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#entrada-tarea {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--borde);
+    background: var(--superficie);
+    color: var(--texto);
+}
+
+#lista-tareas {
+    padding-left: 0;
+    list-style: none;
+}
+
+#lista-tareas li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 14px;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+
+#lista-tareas li span {
+    flex: 1;
+}
+
+#lista-tareas button {
+    background: var(--superficie);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+}
+
+#lista-tareas .completada {
+    text-decoration: line-through;
+    opacity: 0.55;
+}
+
+@media (max-width: 500px) {
+    #formulario-tarea {
+        flex-wrap: wrap;
+    }
+
+    #entrada-tarea {
+        flex-basis: 100%;
+    }
+}
