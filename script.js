@@ -1,7 +1,7 @@
 
-const boton = document.getElementById("boton-mensaje");
-const mensaje = document.getElementById("mensaje");
+const botonTema = document.getElementById("boton-tema");
 
-boton.addEventListener("click", function () {
-    mensaje.textContent = "¡Funciona! Acabo de ejecutar mi primer JavaScript.";
+botonTema.addEventListener("click", function () {
+    document.body.classList.toggle("tema-claro");
 });
+

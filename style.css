@@ -240,3 +240,12 @@ footer {
         padding: 22px;
     }
 }
+/* Tema claro */
+body.tema-claro {
+    --fondo: #f3f4f6;
+    --superficie: #ffffff;
+    --texto: #1f2937;
+    --texto-secundario: #64748b;
+    --acento: #6d28d9;
+    --borde: #d1d5db;
+}
